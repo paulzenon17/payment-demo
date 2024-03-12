@@ -1,0 +1,84 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("wall.jpg");
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-option {
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-btn:hover, .dropdown-btn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.dropdown-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #45a049;
+}
+
+.show {
+    display: block;
+}
+/* Add CSS styles for the credit card input fields */
+.credit-card-input {
+    display: flex;
+    align-items: center;
+}
+
+.credit-card-input input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%; /* Set the width to 100% */
+    max-width: 80px; /* Limit the maximum width to avoid excessive stretching */
+}
+.cvv-input {
+    width: 10px;
+}

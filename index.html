@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code Payment gateway demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>QR Payment gateway demo</h1>
+    <div class="payment-options">
+        <div class="payment-option">
+            <button class="dropdown-btn">Credit/Debit card payment</button>
+            <div class="dropdown-content">
+                <div class="card-brand-logo">
+                    <img src="logo.png" width="120px" height="90px">
+                </div>
+                <div class="card-main-field">
+                    <input type="text" placeholder="Card Number" class="card-number-input" maxlength="100" style="width: 70%; max-width: 500px;">
+                </div>
+                <input type="text" placeholder="Cardholder Name"  maxlength="100" style="width: 70%; max-width: 500px;">
+                <div class="credit-card-input">
+                    <input type="text" placeholder="MM/YY" class="expiry-input" maxlength="5">
+                    <input type="password" placeholder="CVV" class="cvv-input" maxlength="3">
+                </div>  
+                <button onclick="payNow('Credit/Debit card payment')">Pay Now</button>
+            </div>
+        </div>
+        <div class="payment-option">
+            <button class="dropdown-btn">UPI payment</button>
+            
+            <div class="dropdown-content">
+                    <input type="text" placeholder="UPI ID" maxlength="100" style="width: 90%"; max-width: 500px;>
+                <button onclick="payNow('UPI payment')">Pay Now</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
